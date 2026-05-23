@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Бесплатный Сервис | MCC Power</title>
-    <!-- Бесплатный шрифт от Google -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCC | Enterprise Platform</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
     <style>
         * {
@@ -18,7 +17,6 @@
             background: linear-gradient(145deg, #0a0f1e 0%, #0c1222 100%);
             color: #eef2ff;
             line-height: 1.5;
-            scroll-behavior: smooth;
         }
 
         .container {
@@ -27,7 +25,6 @@
             padding: 0 24px;
         }
 
-        /* Header */
         .header {
             padding: 20px 0;
             border-bottom: 1px solid rgba(255,255,255,0.08);
@@ -53,7 +50,6 @@
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
-            letter-spacing: -0.5px;
         }
 
         .nav-links {
@@ -72,7 +68,6 @@
             color: #a78bfa;
         }
 
-        /* Hero */
         .hero {
             text-align: center;
             padding: 80px 0 60px;
@@ -86,7 +81,6 @@
             background-clip: text;
             color: transparent;
             margin-bottom: 20px;
-            letter-spacing: -1px;
         }
 
         .hero p {
@@ -108,9 +102,7 @@
             border-radius: 60px;
             font-weight: 600;
             text-decoration: none;
-            transition: 0.2s;
             display: inline-block;
-            border: none;
             cursor: pointer;
             font-size: 16px;
         }
@@ -124,7 +116,6 @@
         .btn-primary:hover {
             transform: translateY(-3px);
             box-shadow: 0 15px 30px rgba(79,70,229,0.5);
-            background: linear-gradient(95deg, #8b5cf6, #6366f1);
         }
 
         .btn-outline {
@@ -139,7 +130,6 @@
             color: white;
         }
 
-        /* Features grid */
         .features {
             padding: 60px 0;
         }
@@ -169,7 +159,6 @@
         .card:hover {
             border-color: #4f46e5;
             transform: translateY(-5px);
-            background: rgba(30, 35, 60, 0.8);
         }
 
         .card-icon {
@@ -186,7 +175,6 @@
             color: #a5b4fc;
         }
 
-        /* Бесплатный инструмент: генератор паролей */
         .tool-section {
             background: rgba(0, 0, 0, 0.25);
             border-radius: 48px;
@@ -195,70 +183,17 @@
             border: 1px solid #2d2f4e;
         }
 
-        .tool-box {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 24px;
-        }
-
         .password-display {
             background: #0b0e1a;
             padding: 18px 24px;
             border-radius: 60px;
             font-family: monospace;
             font-size: 26px;
-            letter-spacing: 2px;
-            font-weight: 600;
-            width: 100%;
             text-align: center;
-            word-break: break-all;
             border: 1px solid #334155;
+            margin-bottom: 20px;
         }
 
-        .range-slider {
-            width: 100%;
-            max-width: 400px;
-        }
-
-        input[type="range"] {
-            width: 100%;
-            height: 6px;
-            -webkit-appearance: none;
-            background: #334155;
-            border-radius: 10px;
-            outline: none;
-        }
-
-        input[type="range"]:focus {
-            outline: none;
-        }
-
-        input[type="range"]::-webkit-slider-thumb {
-            -webkit-appearance: none;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background: #a78bfa;
-            cursor: pointer;
-            box-shadow: 0 0 5px #a78bfa;
-        }
-
-        .check-group {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .check-group label {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            cursor: pointer;
-        }
-
-        /* Footer */
         .footer {
             text-align: center;
             padding: 48px 0 32px;
@@ -268,15 +203,8 @@
         }
 
         @media (max-width: 720px) {
-            .hero h1 {
-                font-size: 38px;
-            }
-            .nav {
-                flex-direction: column;
-            }
-            .password-display {
-                font-size: 18px;
-            }
+            .hero h1 { font-size: 38px; }
+            .nav { flex-direction: column; }
         }
     </style>
 </head>
@@ -285,12 +213,11 @@
 <header class="header">
     <div class="container">
         <div class="nav">
-            <div class="logo">✦ MCC FREE</div>
+            <div class="logo">✦ MCC Enterprise</div>
             <div class="nav-links">
-                <a href="#">Главная</a>
-                <a href="#features">Возможности</a>
-                <a href="#tools">Инструменты</a>
-                <a href="#start">Старт</a>
+                <a href="#">Home</a>
+                <a href="#features">Solutions</a>
+                <a href="#tools">Security Tools</a>
             </div>
         </div>
     </div>
@@ -299,193 +226,89 @@
 <main>
     <div class="container">
         <section class="hero">
-            <h1>Бесплатная экосистема<br>без скрытых условий</h1>
-            <p>Полноценный сайт с генератором паролей, адаптивным дизайном и чистыми технологиями. Никаких подписок — весь код уже перед тобой.</p>
+            <h1>Enterprise-Grade Infrastructure</h1>
+            <p>Secure, scalable, and fully managed platform for modern businesses.</p>
             <div class="btn-group">
-                <a href="#tools" class="btn btn-primary">Попробовать инструмент</a>
-                <a href="#features" class="btn btn-outline">Изучить фичи</a>
+                <a href="#tools" class="btn btn-primary">Get Started</a>
+                <a href="#features" class="btn btn-outline">Learn More</a>
             </div>
         </section>
 
         <section id="features" class="features">
-            <h2 class="section-title">Встроенные возможности</h2>
+            <h2 class="section-title">Core Capabilities</h2>
             <div class="grid-3">
                 <div class="card">
                     <div class="card-icon">⚡</div>
-                    <h3>Мгновенная работа</h3>
-                    <p>Скрипты выполняются в браузере — без серверов, задержек и сбора данных.</p>
+                    <h3>High Performance</h3>
+                    <p>99.99% uptime SLA with global edge caching and low latency.</p>
                 </div>
                 <div class="card">
-                    <div class="card-icon">🔓</div>
-                    <h3>Полностью бесплатно</h3>
-                    <p>Ни одного платного API, лицензий или рекламных сетей. Чистый HTML/CSS/JS.</p>
+                    <div class="card-icon">🔒</div>
+                    <h3>Zero-Trust Security</h3>
+                    <p>End-to-end encryption, DDoS protection, and compliance ready.</p>
                 </div>
                 <div class="card">
-                    <div class="card-icon">🛡️</div>
-                    <h3>Приватность</h3>
-                    <p>Вся генерация паролей и действий происходит локально. Ничто не покидает твой компьютер.</p>
+                    <div class="card-icon">📊</div>
+                    <h3>Analytics & Observability</h3>
+                    <p>Real-time metrics, logs, and tracing for full visibility.</p>
                 </div>
             </div>
         </section>
 
         <section id="tools" class="tool-section">
-            <div class="tool-box">
-                <h2 style="font-size: 32px;">Генератор надёжных паролей</h2>
-                <p style="color:#b9c3ff;">Создай случайный пароль любой длины — бесплатно и без ограничений</p>
-                <div class="password-display" id="passwordOutput">P@ssw0rd!2025</div>
-                
-                <div class="range-slider">
-                    <label>Длина: <span id="lengthValue">12</span></label>
-                    <input type="range" id="passwordLength" min="4" max="48" value="12">
-                </div>
-
-                <div class="check-group">
-                    <label><input type="checkbox" id="useUppercase" checked> A-Z (верхний)</label>
-                    <label><input type="checkbox" id="useLowercase" checked> a-z (нижний)</label>
-                    <label><input type="checkbox" id="useNumbers" checked> 0-9</label>
-                    <label><input type="checkbox" id="useSymbols" checked> !@#$%^&*</label>
-                </div>
-
-                <div style="display: flex; gap: 16px; flex-wrap: wrap; justify-content: center;">
-                    <button class="btn btn-primary" id="generateBtn">Сгенерировать новый</button>
-                    <button class="btn btn-outline" id="copyBtn">Копировать пароль</button>
-                </div>
-                <div id="copyMsg" style="font-size:14px; margin-top: 10px; color:#86efac;"></div>
+            <h2 style="font-size: 32px; text-align: center;">Secure Password Generator</h2>
+            <p style="text-align: center; color:#b9c3ff; margin-bottom: 30px;">Enterprise-grade random password generation</p>
+            <div class="password-display" id="passwordOutput">MCC_Secure_2025</div>
+            <div style="display: flex; gap: 16px; justify-content: center;">
+                <button class="btn btn-primary" id="generateBtn">Generate New</button>
+                <button class="btn btn-outline" id="copyBtn">Copy to Clipboard</button>
             </div>
-        </section>
-
-        <section id="start" style="text-align: center; padding: 30px 0 60px;">
-            <h2 style="font-size: 32px;">Готов использовать бесплатно?</h2>
-            <p style="margin: 20px auto; max-width: 600px;">Этот сайт — целиком открытый проект. Сохрани код и размещай на любом хостинге или запускай локально.</p>
-            <div class="btn-group">
-                <a href="#" class="btn btn-primary" id="fakeDownloadTrigger">Скачать .html (локально)</a>
-            </div>
+            <div id="copyMsg" style="text-align:center; margin-top: 16px; color:#86efac;"></div>
         </section>
     </div>
 </main>
 
 <footer class="footer">
     <div class="container">
-        <p>MCC — бесплатное решение | Дата создания: 24.05.2026 | Полный функционал без ограничений</p>
-        <p style="margin-top: 12px; font-size: 14px;">✨ Никаких скрытых платежей, никаких отказов в обслуживании ✨</p>
+        <p>MCC Enterprise Platform — Secure Infrastructure Solutions</p>
     </div>
 </footer>
 
 <script>
-    // Полноценный рабочий генератор паролей
     (function() {
         const passwordOutput = document.getElementById('passwordOutput');
-        const lengthSlider = document.getElementById('passwordLength');
-        const lengthSpan = document.getElementById('lengthValue');
-        const uppercaseCheck = document.getElementById('useUppercase');
-        const lowercaseCheck = document.getElementById('useLowercase');
-        const numbersCheck = document.getElementById('useNumbers');
-        const symbolsCheck = document.getElementById('useSymbols');
         const generateBtn = document.getElementById('generateBtn');
         const copyBtn = document.getElementById('copyBtn');
         const copyMsgSpan = document.getElementById('copyMsg');
 
-        const UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-        const LOWER = 'abcdefghijklmnopqrstuvwxyz';
-        const NUMBERS = '0123456789';
-        const SYMBOLS = '!@#$%^&*';
-
         function generatePassword() {
-            let charset = '';
-            if (uppercaseCheck.checked) charset += UPPER;
-            if (lowercaseCheck.checked) charset += LOWER;
-            if (numbersCheck.checked) charset += NUMBERS;
-            if (symbolsCheck.checked) charset += SYMBOLS;
-
-            if (charset === '') {
-                // fallback — если ничего не выбрано, включаем хотя бы латиницу
-                charset = LOWER + UPPER;
-                lowercaseCheck.checked = true;
-                uppercaseCheck.checked = true;
-            }
-
-            const length = parseInt(lengthSlider.value, 10);
+            const length = 16;
+            const charset = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*';
             let password = '';
             for (let i = 0; i < length; i++) {
-                const randomIndex = Math.floor(Math.random() * charset.length);
-                password += charset[randomIndex];
+                password += charset[Math.floor(Math.random() * charset.length)];
             }
-            // дополнительная гарантия: если пароль пуст (невозможно) — подставляем значение
-            if (password === '') password = 'MCC_Gen2026';
             return password;
         }
 
-        function updatePassword() {
-            const newPwd = generatePassword();
-            passwordOutput.innerText = newPwd;
+        function refreshPassword() {
+            passwordOutput.innerText = generatePassword();
         }
 
-        function refreshAndDisplay() {
-            updatePassword();
-        }
-
-        // обновить значение длины в отображении
-        function updateLengthLabel() {
-            lengthSpan.innerText = lengthSlider.value;
-            refreshAndDisplay();
-        }
-
-        // события
-        lengthSlider.addEventListener('input', updateLengthLabel);
-        uppercaseCheck.addEventListener('change', refreshAndDisplay);
-        lowercaseCheck.addEventListener('change', refreshAndDisplay);
-        numbersCheck.addEventListener('change', refreshAndDisplay);
-        symbolsCheck.addEventListener('change', refreshAndDisplay);
-        generateBtn.addEventListener('click', refreshAndDisplay);
-
-        // копирование в буфер обмена
+        generateBtn.addEventListener('click', refreshPassword);
+        
         copyBtn.addEventListener('click', async () => {
-            const passwordText = passwordOutput.innerText;
-            if (!passwordText) return;
+            const pwd = passwordOutput.innerText;
             try {
-                await navigator.clipboard.writeText(passwordText);
-                copyMsgSpan.innerText = '✅ Пароль скопирован!';
-                setTimeout(() => {
-                    copyMsgSpan.innerText = '';
-                }, 1800);
-            } catch (err) {
-                // fallback
-                const textarea = document.createElement('textarea');
-                textarea.value = passwordText;
-                document.body.appendChild(textarea);
-                textarea.select();
-                document.execCommand('copy');
-                document.body.removeChild(textarea);
-                copyMsgSpan.innerText = '📋 Скопировано (fallback)';
-                setTimeout(() => {
-                    copyMsgSpan.innerText = '';
-                }, 1500);
+                await navigator.clipboard.writeText(pwd);
+                copyMsgSpan.innerText = '✅ Copied to clipboard';
+                setTimeout(() => copyMsgSpan.innerText = '', 1500);
+            } catch(e) {
+                copyMsgSpan.innerText = '❌ Manual copy required';
             }
         });
 
-        // инициализация
-        updateLengthLabel();
-        
-        // "Скачать" html — просто предложение сохранить страницу
-        const fakeBtn = document.getElementById('fakeDownloadTrigger');
-        if (fakeBtn) {
-            fakeBtn.addEventListener('click', (e) => {
-                e.preventDefault();
-                const blob = new Blob([document.documentElement.outerHTML], {type: 'text/html'});
-                const url = URL.createObjectURL(blob);
-                const a = document.createElement('a');
-                a.href = url;
-                a.download = 'mcc_free_site.html';
-                document.body.appendChild(a);
-                a.click();
-                document.body.removeChild(a);
-                URL.revokeObjectURL(url);
-                copyMsgSpan.innerText = '⬇️ Файл сохранён на устройство.';
-                setTimeout(() => {
-                    if (copyMsgSpan.innerText === '⬇️ Файл сохранён на устройство.') copyMsgSpan.innerText = '';
-                }, 2500);
-            });
-        }
+        refreshPassword();
     })();
 </script>
 </body>
